@@ -1,0 +1,731 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  /* overflow: auto; */
+}
+
+/* NAVIGATION BAR CSS */
+
+.navbar {
+    background-color:white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.myLogo {
+    position: fixed;
+	width: 5rem;
+	height: 5rem;
+	top: 0px;
+	left: 0px;
+}
+
+@media screen and (max-width:1000px) {  
+    .container img {
+      display: none;
+    }
+  }
+
+/* Hi There Page CSS */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/bgImage.png) no-repeat; 
+    background-size: cover;
+}
+
+@media screen and (max-width:480px) {  
+    .main background-image {
+      display: none;
+    }
+  }
+
+.main h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.main .bt1 {
+    height: 50px;
+    width: 140px;
+    background-color: #4d0000;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt1:hover {
+    background-color: white;
+    color: #4d0000;
+}
+
+.text {
+    color: #4d0000;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 200;
+    width: 100%;
+}
+
+.text.first-text {
+    color: black;
+}
+
+.text.second-text:before  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid #4d0000;
+    animation: animate 4s steps(16) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+
+/* About Me Page CSS */
+
+/* .about {
+    width: 100%;
+    height: 110vh;
+} */
+
+.about img {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.about h1{
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.text.third-text {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
+}   
+
+.circle:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Skills Page CSS */
+
+/* 
+.skills {
+    width: 100%;
+    height: 100vh;
+} */
+
+.skills {
+    padding-top: 3%;
+}
+
+.mainText p {
+    font-size: 1.2rem;
+}
+
+.skills h1 {
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+
+}
+
+.progress p {
+    font-size: 1rem;
+}
+
+
+.progress {
+    background-color: lightgray;
+   /* justify-content: flex-start; */
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    height: 30px; 
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.progress p {
+    color: white;
+    padding: 5px;
+    font-size: 1rem; /* Adjust the font size for the progress text */
+}
+
+
+.pro-value-1 {
+    animation: percentage 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 92%;
+    }
+}
+
+
+.pro-value-2 {
+    animation: percentage2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage2 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+
+.pro-value-3 {
+    animation: percentage3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage3 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+.pro-value-4 {
+    animation: percentage4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage4 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.pro-value-5 {
+    animation: percentage5 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage5 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+.pro-value-6 {
+    animation: percentage6 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage6 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.pro-value-7 {
+    animation: percentage7 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage7 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.pro-value-8 {
+    animation: percentage8 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage8 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.pro-value-9 {
+    animation: percentage9 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage9 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.pro-value-10 {
+    animation: percentage10 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage10 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+.pro-value-11 {
+    animation: percentage11 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage11 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+
+
+.pro-value-12 {
+    animation: percentage12 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage12 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+
+
+.pro-value-13 {
+    animation: percentage13 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage13 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+
+
+.pro-value-14 {
+    animation: percentage14 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage14 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.pro-value-15 {
+    animation: percentage15 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 30px;
+    width: 0%;
+}
+
+@keyframes percentage15 {
+    
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+/* Projects Page CSS */
+
+/* .projects {
+    width: 100%;
+    height: 200vh;
+} */
+
+.projects {
+    padding-top: 3%;
+}
+
+
+.projects .gallery-title {
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    color: black;
+
+}
+
+.projects p {
+    font-size: 1.2rem;
+}
+
+
+.filter-button {
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid black;
+}
+
+
+/* .filter-button:hover {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    color: beige;
+} */
+
+
+.btn-default:active .filter-button:active {
+    background-color: black;
+    color: white;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    object-fit: contain;    
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 1px solid #000000;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+/*Testimonials*/
+
+/* .testimonials {
+    width: 100%;
+    height: 100vh;
+} */
+
+.testimonials {
+    padding-top: 5%;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+}
+
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #4070F4;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+/* MOdal Stuff*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  }
